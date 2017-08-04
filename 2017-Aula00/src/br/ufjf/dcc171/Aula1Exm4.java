@@ -1,18 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.ufjf.dcc171;
 
 import br.ufjf.dcc171.modelo.Pessoa;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author ice
- */
+
 public class Aula1Exm4 {
 
     public static void main(String[] args) {
@@ -24,9 +17,11 @@ public class Aula1Exm4 {
             p.setAnoNascimento(1990+i);
             pessoas.add(p);
         }
+
         pessoas.forEach((pessoa) -> {
             System.out.println(pessoa);
         });
         pessoas.clear();
     }
 }
+
