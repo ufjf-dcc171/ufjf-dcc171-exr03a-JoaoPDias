@@ -27,6 +27,6 @@ public class Aula1Exm4 {
         pessoas.forEach((pessoa) -> {
             System.out.println(pessoa);
         });
-
+        pessoas.clear();
     }
 }
