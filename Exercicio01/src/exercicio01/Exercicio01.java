@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package exercicio01;
-public class Exercicio01 extends JApplet {
+public class Exercicio01{
 
     public static void main(String[] args) {
     }
