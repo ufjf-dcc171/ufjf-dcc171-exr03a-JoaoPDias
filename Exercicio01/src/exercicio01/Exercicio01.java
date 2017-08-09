@@ -5,11 +5,12 @@ import javax.swing.JOptionPane;
 public class Exercicio01 {
 
     public static void main(String[] args) {
-        while (true) {
+        Float largura, comprimento,altura;
+        while (largura != null && comprimento != null && altura != null) {
             try {
-                Float largura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Largura"));
-                Float comprimento = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o Comprimento"));
-                Float altura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Altura"));
+                largura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Largura"));
+                comprimento = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o Comprimento"));
+                altura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Altura"));
                 JOptionPane.showMessageDialog(null, "O volume do pacote é:" + largura*comprimento*altura,
                         "Resultado",
                         JOptionPane.INFORMATION_MESSAGE);
