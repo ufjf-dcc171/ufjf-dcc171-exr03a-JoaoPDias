@@ -6,7 +6,7 @@ public class Exercicio01 {
 
     public static void main(String[] args) {
         Float largura, comprimento,altura;
-        while (largura != null && comprimento != null && altura != null) {
+        while (true) {
             try {
                 largura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Largura"));
                 comprimento = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o Comprimento"));
@@ -19,6 +19,9 @@ public class Exercicio01 {
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Digite os valores utilizando números inteiros ou decimais", "Entrada Inválida", JOptionPane.ERROR_MESSAGE);
 
+            }
+            catch (NullPointerException ex) {
+               break;
             }
         }
     }
