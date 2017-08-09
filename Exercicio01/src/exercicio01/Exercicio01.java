@@ -10,13 +10,13 @@ public class Exercicio01 {
                 Float largura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Largura"));
                 Float comprimento = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o Comprimento"));
                 Float altura = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite a Altura"));
-                JOptionPane.showMessageDialog(null, largura,
+                JOptionPane.showMessageDialog(null, "O volume do pacote é:" + largura*comprimento*altura,
                         "Resultado",
                         JOptionPane.INFORMATION_MESSAGE);
                 break;
 
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(null, "Digite um número inteiro para as duas opções", "Entrada Inválida", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Digite os valores utilizando números inteiros ou decimais", "Entrada Inválida", JOptionPane.ERROR_MESSAGE);
 
             }
         }
